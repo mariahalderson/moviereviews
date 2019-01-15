@@ -2,7 +2,7 @@
 	<?php include('templates/header.php'); ?>
 
 	<?php 
-
+		
 		$movieid = $_GET['id'];
 		$results = getSingle('tbl_movies', 'movies_id', $movieid);
 

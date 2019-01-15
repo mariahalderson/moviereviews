@@ -27,5 +27,17 @@ function getSingle($tbl, $col, $value){
 	}
 }
 
+function filterResults($tbl, $tbl_2, $tbl_3, $col, $col_2, $col_3, $filter){
+	include('connect.php');
+	$filterQuery = 'SELECT * FROM '.$tbl.' as a, '.$tbl_2.' as b, '.$tbl_3.' as c WHERE a.'.$col.' = c.'.$col.' AND b.'.$col_2.' = c.'.$col_2.' AND b.'.$col_3.' = "'.$filter.'"';
+	$runQuery = $pdo->query($filterQuery);
+	if($runQuery){
+		return $runQuery;
+	}else{
+		$error = 'There was a problem';
+		return $error;
+	}
+}
+
 
 ?>
