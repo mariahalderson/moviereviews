@@ -2,7 +2,7 @@
 
 	$db_dsn = array(
 		'host'=>'localhost',
-		'dbname'=>'db_video',
+		'dbname'=>'db_movies',
 		'charset'=>'utf8'
 	);
 
