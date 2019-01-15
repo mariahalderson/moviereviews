@@ -14,5 +14,18 @@ function getAll($tbl){
 	}
 }
 
+function getSingle($tbl, $col, $value){
+	include('connect.php');
+
+	$querySingle = 'SELECT * FROM '.$tbl.' WHERE '.$col.' = '.$value;
+	$runSingle = $pdo->query($querySingle);
+	if($runSingle){
+		return $runSingle;
+	}else{
+		$error = 'There was a problem';
+		return $error;
+	}
+}
+
 
 ?>

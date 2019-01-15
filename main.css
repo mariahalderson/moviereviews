@@ -1,0 +1,52 @@
+
+ul{
+	list-style-type: none;
+}
+
+li{
+	text-align: center;
+}
+#mainlist{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+#listcontainer{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+	border: 1px solid #333;
+	margin: 10px;
+	max-width: 300px;
+}
+
+#listcon{
+	text-align: center;
+	font-family: 'Arial';
+	font-size: 36px;
+}
+
+#listun{
+	display: flex;
+	flex-direction: column;
+	list-style-type: none;
+	padding: 0;
+}
+
+#listun li img{
+	max-width: 250px;
+	margin: 0 auto;
+}
+
+.btn{
+	text-decoration: none;
+	text-align: center;
+	padding: 10px 20px;
+	font-family: 'Arial';
+	color: #333;
+	font-size: 20px;
+	border: 2px solid #333;
+}
